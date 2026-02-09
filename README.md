@@ -1,2 +1,0 @@
-# faridnasrdine.github.io
-sdfasdf

@@ -82,8 +82,13 @@ const ProjectsSection = () => (
                 <p.icon className={`w-5 h-5 ${c.iconText}`} />
               </div>
               <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <Github className="w-4 h-4 text-muted-foreground hover:text-foreground cursor-pointer" />
-                <ExternalLink className="w-4 h-4 text-muted-foreground hover:text-foreground cursor-pointer" />
+                <a href="https://github.com/faridnasrdine" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="transition-colors"
+                  >
+                    <Github className="w-4 h-4 text-muted-foreground hover:text-foreground cursor-pointer" />
+                  </a>
               </div>
             </div>
             <h3 className="text-lg font-semibold font-mono mb-2 text-foreground">{p.title}</h3>

@@ -2,7 +2,7 @@ import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 
 const links = [
-  { icon: Mail, label: "Email", value: "nasr-eddine@student.1337.ma", href: "mailto:nasr-eddine@student.1337.ma" },
+  { icon: Mail, label: "Email", value: "nasrdinefarid@gmail.com", href: "https://mail.google.com" },
   { icon: Github, label: "GitHub", value: "github.com/nasreddine", href: "https://github.com" },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/nasreddine", href: "https://linkedin.com" },
   { icon: MapPin, label: "Location", value: "Morocco 🇲🇦", href: "#" },

@@ -20,7 +20,7 @@ const holyGraphNodes = [
   { name: "NetPractice", x: 200, y: 320, status: "done" },
   { name: "cub3d", x: 80, y: 320, status: "done" },
   { name: "CPP 0-4", x: 320, y: 320, status: "done" },
-  { name: "CPP 5-9", x: 200, y: 390, status: "current" },
+  { name: "CPP 5-9", x: 200, y: 390, status: "done" },
   { name: "Inception", x: 80, y: 390, status: "current" },
   { name: "webserv", x: 320, y: 390, status: "locked" },
   { name: "ft_transcendence", x: 200, y: 460, status: "locked" },

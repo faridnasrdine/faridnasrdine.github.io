@@ -2,8 +2,8 @@ import { Trophy, Zap, Target } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 
 const stats = [
-  { icon: Trophy, label: "Level", value: "8.42", color: "text-primary" },
-  { icon: Target, label: "Projects Done", value: "15", color: "text-secondary" },
+  { icon: Trophy, label: "Level", value: "5.4", color: "text-primary" },
+  { icon: Target, label: "Projects Done", value: "21", color: "text-secondary" },
   { icon: Zap, label: "Total XP", value: "42,800", color: "text-accent" },
 ];
 

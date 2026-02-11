@@ -8,6 +8,7 @@ const projects = [
     tags: ["C", "Unix", "Parsing", "Processes"],
     icon: Terminal,
     color: "primary" as const,
+    Github: "https://github.com/faridnasrdine/Minishell_42",
   },
   {
     title: "cub3D",
@@ -15,14 +16,16 @@ const projects = [
     tags: ["C", "Graphics", "Math", "MiniLibX"],
     icon: Cpu,
     color: "secondary" as const,
+    Github: "https://github.com/faridnasrdine/cub3d",
+
   },
-  {
-    title: "ft_transcendence",
-    description: "Full-stack multiplayer Pong game with real-time gameplay, chat, user auth, and tournament system.",
-    tags: ["TypeScript", "NestJS", "React", "WebSocket"],
-    icon: Globe,
-    color: "accent" as const,
-  },
+  // {
+  //   title: "ft_transcendence",
+  //   description: "Full-stack multiplayer Pong game with real-time gameplay, chat, user auth, and tournament system.",
+  //   tags: ["TypeScript", "NestJS", "React", "WebSocket"],
+  //   icon: Globe,
+  //   color: "accent" as const,
+  // },
   {
     title: "NetPractice",
     description: "Network configuration exercises — subnetting, routing tables, TCP/IP stack mastery.",
@@ -36,14 +39,15 @@ const projects = [
     tags: ["C", "Threads", "Mutexes", "Concurrency"],
     icon: Cpu,
     color: "secondary" as const,
+    Github: "https://github.com/faridnasrdine/42cursus/tree/main/Philosophers",
   },
-  {
-    title: "Inception",
-    description: "Docker infrastructure with NGINX, WordPress, and MariaDB. Multi-container orchestration with docker-compose.",
-    tags: ["Docker", "DevOps", "Linux", "NGINX"],
-    icon: Terminal,
-    color: "accent" as const,
-  },
+  // {
+  //   title: "Inception",
+  //   description: "Docker infrastructure with NGINX, WordPress, and MariaDB. Multi-container orchestration with docker-compose.",
+  //   tags: ["Docker", "DevOps", "Linux", "NGINX"],
+  //   icon: Terminal,
+  //   color: "accent" as const,
+  // },
 ];
 
 const colorMap = {

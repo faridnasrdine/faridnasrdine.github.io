@@ -1,5 +1,5 @@
 import { Github, ArrowDown, Mail, FolderOpen } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "../../../../Downloads/nafarid.jpg";
 import ParticleBackground from "./ParticleBackground";
 
 const codeSnippets = [

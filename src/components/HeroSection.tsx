@@ -110,7 +110,7 @@ const HeroSection = () => (
           Download CV
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/faridnasrdine"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"

@@ -3,7 +3,7 @@ import SectionWrapper from "./SectionWrapper";
 
 const links = [
   { icon: Mail, label: "Email", value: "nasrdinefarid@gmail.com", href: "https://mail.google.com" },
-  { icon: Github, label: "GitHub", value: "github.com/faridnasreddine", href: "https://github.com" },
+  { icon: Github, label: "GitHub", value: "github.com/faridnasrdine", href: "https://github.com" },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/nasreddine", href: "https://linkedin.com" },
   { icon: MapPin, label: "Location", value: "Morocco 🇲🇦", href: "#" },
 ];

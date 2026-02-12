@@ -1,5 +1,4 @@
 import { Github, ArrowDown, Mail, FolderOpen } from "lucide-react";
-import profileImg from "../assets/nafarid.jpg";
 import ParticleBackground from "./ParticleBackground";
 
 const codeSnippets = [
@@ -52,7 +51,7 @@ const HeroSection = () => (
         <div className="relative">
           <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-secondary to-accent opacity-75 blur-sm animate-pulse" />
           <div className="relative w-36 h-36 rounded-full overflow-hidden ring-2 ring-primary/50">
-            <img src={profileImg} alt="Nasr-Eddine Farid" className="w-full h-full object-cover" />
+            <img src="https://avatars.githubusercontent.com/u/178327346?v=4" alt="Nasr-Eddine Farid" className="w-full h-full object-cover" />
           </div>
           {/* Status dot */}
           <div className="absolute bottom-2 right-2 w-4 h-4">

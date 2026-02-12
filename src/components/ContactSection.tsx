@@ -2,30 +2,10 @@ import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 
 const links = [
-  { 
-    icon: Mail, 
-    label: "Email", 
-    value: "nasrdinefarid@gmail.com", 
-    href: "mailto:nasrdinefarid@gmail.com"
-  },
-  { 
-    icon: Github, 
-    label: "GitHub", 
-    value: "github.com/faridnasrdine", 
-    href: "https://github.com/faridnasrdine"
-  },
-  { 
-    icon: Linkedin, 
-    label: "LinkedIn", 
-    value: "linkedin.com/in/nasr-eddine-farid/", 
-    href: "https://linkedin.com/in/nasr-eddine-farid"
-  },
-  { 
-    icon: MapPin, 
-    label: "Location", 
-    value: "Morocco 🇲🇦", 
-    href: "#"
-  },
+  { icon: Mail, label: "Email", value: "nasrdinefarid@gmail.com", href: "mailto:nasrdinefarid@gmail.com" },
+  { icon: Github, label: "GitHub", value: "github.com/faridnasrdine", href: "https://github.com/faridnasrdine" },
+  { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/nasr-eddine-farid", href: "https://linkedin.com/in/nasr-eddine-farid" },
+  { icon: MapPin, label: "Location", value: "Morocco 🇲🇦", href: "#" },
 ];
 
 const ContactSection = () => (

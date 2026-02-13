@@ -9,6 +9,7 @@ const projects = [
     icon: Terminal,
     color: "primary" as const,
     Github: "https://github.com/faridnasrdine/Minishell_42",
+    live: "https://minishell-demo.example.com",
   },
   {
     title: "cub3D",
@@ -95,6 +96,16 @@ const ProjectsSection = () => (
                   >
                     <Github className="w-4 h-4 text-muted-foreground hover:text-foreground cursor-pointer" />
                   </a>
+                )}
+                {p.live &&(
+                  <a
+                    href={p.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors"
+                    >
+                    <ExternalLink className="w-4 h-4 text-muted-foreground hover:text-foreground cursor-pointer" />
+                    </a>
                 )}
               </div>
             </div>

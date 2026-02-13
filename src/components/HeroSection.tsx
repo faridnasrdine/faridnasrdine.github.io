@@ -102,7 +102,7 @@ const HeroSection = () => (
           Contact
         </a>
         <a
-          href="#"
+          href="/CV.pdf"
           className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"
         >
           <ArrowDown className="w-4 h-4" />

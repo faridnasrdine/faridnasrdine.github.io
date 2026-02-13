@@ -3,7 +3,7 @@ import SectionWrapper from "./SectionWrapper";
 const skillGroups = [
   {
     category: "Languages",
-    skills: ["C", "C++", "Python", "TypeScript", "Bash", "Assembly"],
+    skills: ["C", "C++", "Python", "HTML", "Bash", "Assembly"],
   },
   {
     category: "Cybersecurity",

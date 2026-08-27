@@ -28,6 +28,14 @@ const projects = [
   //   color: "accent" as const,
   // },
   {
+    title: "webserv",
+    description: "HTTP server built from scratch in C++. Handles GET/POST/DELETE, CGI, static file serving, and multiple configurable virtual hosts.",
+    tags: ["C++", "HTTP", "Sockets", "CGI"],
+    icon: Globe,
+    color: "accent" as const,
+    Github: "https://github.com/akrate/webserv-",
+  },
+  {
     title: "NetPractice",
     description: "Network configuration exercises — subnetting, routing tables, TCP/IP stack mastery.",
     tags: ["Networking", "TCP/IP", "Subnetting"],

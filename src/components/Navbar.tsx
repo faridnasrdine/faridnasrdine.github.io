@@ -4,7 +4,7 @@ import { Shield, Menu, X } from "lucide-react";
 const navItems = [
   { id: "hero", label: "Home" },
   { id: "about", label: "About" },
-  { id: "progress", label: "1337" },
+  { id: "certificate", label: "Certificat" },
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },

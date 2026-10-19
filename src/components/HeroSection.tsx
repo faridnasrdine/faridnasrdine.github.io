@@ -1,5 +1,6 @@
 import { Github, ArrowDown, Mail, FolderOpen } from "lucide-react";
 import ParticleBackground from "./ParticleBackground";
+import profileImg from "../assets/nafarid.png";
 
 const codeSnippets = [
   'if (access == "granted") {',
@@ -21,7 +22,7 @@ const HeroSection = () => (
   <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
     {/* Interactive particle background */}
     <ParticleBackground />
-    
+
     {/* Animated background */}
     <div className="absolute inset-0 bg-grid" style={{ zIndex: 0 }} />
     <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-primary/10 animate-glow-pulse" style={{ zIndex: 0 }} />
@@ -45,82 +46,87 @@ const HeroSection = () => (
     </div>
 
     {/* Content */}
-    <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-      {/* Profile image */}
-      <div className="mb-8 flex justify-center animate-slide-up">
-        <div className="relative">
-          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-secondary to-accent opacity-75 blur-sm animate-pulse" />
-          <div className="relative w-36 h-36 rounded-full overflow-hidden ring-2 ring-primary/50">
-            <img src="https://avatars.githubusercontent.com/u/178327346?v=4" alt="Nasr-Eddine Farid" className="w-full h-full object-cover" />
+    <div className="relative z-10 px-4 max-w-6xl mx-auto w-full pt-24 pb-16">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-8 items-center">
+        {/* Profile image (left on desktop, on top on mobile) */}
+        <div className="flex justify-center lg:justify-start animate-slide-up">
+          <div className="relative">
+            <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary via-secondary to-accent opacity-75 blur-md animate-pulse" />
+            <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden ring-2 ring-primary/50">
+              <img src={profileImg} alt="Nasr-Eddine Farid" className="w-full h-full object-cover" />
+            </div>
+            {/* Status dot */}
+            <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-6 h-6">
+              <div className="absolute inset-0 rounded-full bg-primary/70 animate-ping opacity-75" />
+              <div className="relative w-6 h-6 rounded-full bg-primary border-2 border-background" />
+            </div>
           </div>
-          {/* Status dot */}
-          <div className="absolute bottom-2 right-2 w-4 h-4">
-            <div className="absolute inset-0 rounded-full bg-primary/70 animate-ping opacity-75" />
-            <div className="relative w-4 h-4 rounded-full bg-primary border-2 border-background" />
+        </div>
+
+        {/* Text (right on desktop, below photo on mobile) */}
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl sm:text-6xl xl:text-7xl font-bold font-mono mb-4 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            <span className="text-gradient-neon">Nasr-Eddine</span>
+            <br />
+            <span className="text-foreground">Farid</span>
+          </h1>
+
+          <p
+            className="font-mono text-primary text-lg sm:text-xl mb-4 glow-text animate-slide-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            Software Engineer & Cybersecurity Specialist
+          </p>
+
+          <p
+            className="text-muted-foreground max-w-xl mx-auto lg:mx-0 text-base sm:text-lg mb-10 animate-slide-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            Building secure, high-performance systems from the ground up. 42 Network student passionate about
+            low-level programming, network security, and elegant code.
+          </p>
+
+          {/* CTA Buttons */}
+          <div
+            className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slide-up"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <a
+              href="#projects"
+              className="group flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-mono text-sm font-semibold transition-all hover:scale-105 hover:shadow-[0_0_25px_hsl(var(--neon-cyan)/0.4)]"
+            >
+              <FolderOpen className="w-4 h-4" />
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"
+            >
+              <Mail className="w-4 h-4" />
+              Contact
+            </a>
+            <a
+              href="/Cv.pdf"
+              className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"
+            >
+              <ArrowDown className="w-4 h-4" />
+              Download CV
+            </a>
+            <a
+              href="https://github.com/faridnasrdine"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"
+            >
+              <Github className="w-4 h-4" />
+              GitHub
+            </a>
           </div>
         </div>
       </div>
 
-      <h1 className="text-5xl sm:text-7xl font-bold font-mono mb-4 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-        <span className="text-gradient-neon">Nasr-Eddine</span>
-        <br />
-        <span className="text-foreground">Farid</span>
-      </h1>
-
-      <p
-        className="font-mono text-primary text-lg sm:text-xl mb-4 glow-text animate-slide-up"
-        style={{ animationDelay: "0.2s" }}
-      >
-        Software Engineer & Cybersecurity Specialist
-      </p>
-
-      <p
-        className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg mb-10 animate-slide-up"
-        style={{ animationDelay: "0.3s" }}
-      >
-        Building secure, high-performance systems from the ground up. 42 Network student passionate about
-        low-level programming, network security, and elegant code.
-      </p>
-
-      {/* CTA Buttons */}
-      <div
-        className="flex flex-wrap justify-center gap-4 mb-16 animate-slide-up"
-        style={{ animationDelay: "0.4s" }}
-      >
-        <a
-          href="#projects"
-          className="group flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-mono text-sm font-semibold transition-all hover:scale-105 hover:shadow-[0_0_25px_hsl(var(--neon-cyan)/0.4)]"
-        >
-          <FolderOpen className="w-4 h-4" />
-          Projects
-        </a>
-        <a
-          href="#contact"
-          className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"
-        >
-          <Mail className="w-4 h-4" />
-          Contact
-        </a>
-        <a
-          href="/Cv.pdf"
-          className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"
-        >
-          <ArrowDown className="w-4 h-4" />
-          Download CV
-        </a>
-        <a
-          href="https://github.com/faridnasrdine"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 px-6 py-3 rounded-lg neon-border bg-muted/50 text-foreground font-mono text-sm font-semibold transition-all hover:scale-105 neon-border-hover"
-        >
-          <Github className="w-4 h-4" />
-          GitHub
-        </a>
-      </div>
-
       {/* Scroll indicator */}
-      <div className="animate-bounce">
+      <div className="animate-bounce mt-16">
         <ArrowDown className="w-5 h-5 text-muted-foreground mx-auto" />
       </div>
     </div>

@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, ArrowDown, Github, Linkedin, Menu, X, Download, ShieldCheck, Terminal, Globe, Cpu } from "lucide-react";
 import portrait from "../assets/nafarid.png";
 import CertificateSection from "@/components/CertificateSection";
@@ -12,7 +12,30 @@ const projects = [
 ];
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  return <div className="portfolio">
+  const pageRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+    const elements = pageRef.current?.querySelectorAll<HTMLElement>(
+      ".section-heading, .project, .about-grid > div, #skills > div:last-child > div, #certificate > div:last-child > a, .contact-section .wrap"
+    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    elements?.forEach((element) => {
+      element.classList.add("scroll-reveal");
+      observer.observe(element);
+    });
+    return () => {
+      observer.disconnect();
+      elements?.forEach((element) => element.classList.remove("scroll-reveal", "is-visible"));
+    };
+  }, []);
+  return <div className="portfolio" ref={pageRef}>
     <a className="skip-link" href="#main">Skip to content</a>
     <header className="site-header wrap">
       <a className="wordmark" href="#home" aria-label="Farid home">farid<span>®</span></a>

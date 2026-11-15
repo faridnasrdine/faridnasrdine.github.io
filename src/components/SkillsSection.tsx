@@ -7,7 +7,7 @@ const skillGroups = [
   },
   {
     category: "Cybersecurity",
-    skills: ["Penetration Testing", "Network Security", "OSINT", "Forensics"],
+    skills: ["Penetration Testing", "Network Security", "Metasploit", "OSINT", "Forensics"],
   },
   {
     category: "Systems & DevOps",

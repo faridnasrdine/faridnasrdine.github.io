@@ -3,11 +3,11 @@ import SectionWrapper from "./SectionWrapper";
 const skillGroups = [
   {
     category: "Languages",
-    skills: ["C", "C++", "Python", "HTML", "Bash", "Assembly"],
+    skills: ["C", "C++", "Python", "HTML"],
   },
   {
     category: "Cybersecurity",
-    skills: ["Penetration Testing", "Network Security", "Cryptography", "Reverse Engineering", "OSINT", "Forensics"],
+    skills: ["Penetration Testing", "Network Security", "OSINT", "Forensics"],
   },
   {
     category: "Systems & DevOps",
@@ -15,7 +15,7 @@ const skillGroups = [
   },
   {
     category: "Web & Tools",
-    skills: ["React", "Node.js", "PostgreSQL", "REST APIs", "WebSocket", "Wireshark"],
+    skills: ["React", "Wireshark"],
   },
 ];
 
